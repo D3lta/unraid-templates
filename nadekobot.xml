@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>nadekobot</Name>
+  <Repository>ghcr.io/d3lta/unraid-container-nadekobot:latest</Repository>
+  <Registry>https://ghcr.io/d3lta/unraid-container-nadekobot</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>&amp;lt;insert URL&amp;gt;</Support>
+  <Project>https://gitlab.com/Kwoth/nadekobot</Project>
+  <Overview>Nadekobot is a Discord bot with an extensive set of available commands and moderation tools for your own Discord guild.&#xD;
+You can view the available commands on https://nadeko.bot/commands&#xD;
+&#xD;
+Official project repository: https://gitlab.com/Kwoth/nadekobot</Overview>
+  <Category>Tools: Other:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://gitlab.com/uploads/-/system/project/avatar/9321079/nadeko_pfp.jpg</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1729058155</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Discord Bot Token" Target="DISCORD_TOKEN" Default="" Mode="" Description="This is the Discord Bot token taken from App -&amp;gt; Bot -&amp;gt; TOKEN on the developers page" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="Discord Owner ID" Target="DISCORD_OWNERIDS" Default="" Mode="" Description="Runs once and only when no configuration is found; comma seperated&#13;&#10;eg 123123,321321" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Data" Target="/data" Default="/mnt/user/appdata/nadekobot/data" Mode="rw" Description="This folder contains the bot configs and sqlite database." Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="config" Target="/config" Default="/mnt/user/appdata/nadekobot/config" Mode="rw" Description="This folder contains the credentials" Type="Path" Display="always" Required="true" Mask="false"/>
+</Container>
